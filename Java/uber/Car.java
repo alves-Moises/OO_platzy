@@ -1,8 +1,8 @@
 public class Car {
-    Integer id;
-    String license;
-    Account driver;
-    Integer passegenger;
+    private Integer id;
+    private String license;
+    private Account driver;
+    private Integer passegenger;
 
     public Car(String license, Account driver){
         this.license = license;
@@ -12,6 +12,45 @@ public class Car {
     }
     
     void printDataCar(){
-        System.out.println("License: " + license + " Driveer: " + driver.name);
+        System.out.println("License: " + license + " Driveer: " + driver.name + " Passengers: " + passegenger);
     }
+
+    public Integer getPassenger(){
+        return passegenger;
+    }
+
+    public void setPassenger(Integer passenger){
+        if(passenger == 4){
+            this.passegenger = passenger;
+            this.passegenger = 4;
+        }else{
+            System.out.println("NEcessitas assignar 4 passageros");
+        }
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getLicense() {
+        return license;
+    }
+
+    public void setLicense(String license) {
+        this.license = license;
+    }
+
+    public Account getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Account driver) {
+        this.driver = driver;
+    }
+
+    
 }
