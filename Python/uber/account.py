@@ -1,5 +1,7 @@
-from ast import Str
-from re import S
+
+
+
+from pydoc import doc
 
 
 class Account:
@@ -8,4 +10,7 @@ class Account:
     document = str
     email = str
     password = str
-    
+     
+    def __init__(self, name, document):
+        self.name = name
+        self.cocument = document
